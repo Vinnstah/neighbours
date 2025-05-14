@@ -6,11 +6,13 @@ import LandingPage from './pages/LandingPage';
 import SearchPage from './pages/SearchPage';
 import LendingPage from './pages/LendingPage';
 import ProfilePage from './pages/ProfilePage';
+import TopNavbar from './components/TopNav';
 
 function App() {
 
   return (
     <div>
+      <TopNavbar />
       <BrowserRouter>
         <Navbar />
           <Routes>

@@ -27,6 +27,10 @@ body {
   padding: 20px;
 }
 
+p {
+  margin: 0;
+}
+
 /* NAV */
 
 .navbar {
@@ -53,6 +57,41 @@ body {
 }
 
 .navIcon {
+  font-size: 24px;
+}
+
+
+/* TOP NAVBAR */
+
+.ProfilePic {
+  font-size: 34px;
+}
+
+.TopNavbar {
+  height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--light);
+}
+
+.NavColumn1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px
+}
+
+.NameAndLoc {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.NavColumn2 {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
   font-size: 24px;
 }
 
