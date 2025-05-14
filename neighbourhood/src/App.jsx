@@ -1,13 +1,28 @@
 import React from 'react';
-import PorudctsList from './components/ProductList';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import ProductList from './components/ProductList';
+import Navbar from "./components/Nav";
+import LandingPage from './pages/LandingPage';
+import SearchPage from './pages/SearchPage';
+import LendingPage from './pages/LendingPage';
+import ProfilePage from './pages/ProfilePage';
 
 function App() {
 
   return (
     <div>
-      <h1>Nya produkter</h1>
-      <ProductList />
+      <p>nav</p>
+      <p>kategorier</p>
+      <p>sök</p>
+      <BrowserRouter>
+        <Navbar />
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/sok" element={<SearchPage />} />
+            <Route path="/lana-ut" element={<LendingPage />} />
+            <Route path="/min-profil" element={<ProfilePage />} />
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }
