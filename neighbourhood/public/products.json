@@ -1,0 +1,44 @@
+[
+    {
+        "id": "0",
+        "productName": "Spade",
+        "productDes":"En fin spade",
+        "productCat": "Verktyg",
+        "productRenter":"Ronny Larsson",
+        "productImg": "https://gardentutor.com/wp-content/uploads/2019/10/Square-Head-Garden-Spade.jpg",
+        "productRating": "4.5",
+        "productAmountRating": "(12)"
+
+    },
+    {
+        "id": "1",
+        "productName": "Partytält",
+        "productDes":"Ett parttält för 30 personer",
+        "productCat": "Trädgård",
+        "productRenter":"Ronny Larsson",
+        "productImg": "https://www.norrortspartyservice.se/wp-content/uploads/2015/09/t%C3%A4lt-9x3.jpg",
+        "productRating": "4.5",
+        "productAmountRating": "(12)"
+    },
+    {
+        "id": "2",
+        "productName": "Transportbur",
+        "productDes":"Transportbur 70x50x60",
+        "productCat": "Djur",
+        "productRenter":"Sven-Gösta Nilsson",
+        "productImg": "https://tidningen.djurskyddet.se/wp-content/uploads/2024/06/katt-i-transportbur.jpg",
+        "productRating": "4.5",
+        "productAmountRating": "(324)"
+
+    },
+    {
+        "id": "3",
+        "productName": "Hammare",
+        "productDes":"En bra hammare",
+        "productCat": "Verktyg",
+        "productRenter":"Sanna Nielsen",
+        "productImg": "https://images.staticjw.com/pri/3035/hammare.jpg",
+        "productRating": "4.5",
+        "productAmountRating": "(120)"
+    }
+]
