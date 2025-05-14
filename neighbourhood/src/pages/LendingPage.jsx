@@ -3,7 +3,9 @@ import React from 'react';
 const LendingPage = () => {
   return (
     <div>
-      <p>Låna ut</p>
+      <div className='wrapper'>
+        <p>Låna ut</p>
+        </div>
     </div>
   );
 };

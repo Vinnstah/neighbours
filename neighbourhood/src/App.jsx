@@ -11,9 +11,6 @@ function App() {
 
   return (
     <div>
-      <p>nav</p>
-      <p>kategorier</p>
-      <p>sök</p>
       <BrowserRouter>
         <Navbar />
           <Routes>
