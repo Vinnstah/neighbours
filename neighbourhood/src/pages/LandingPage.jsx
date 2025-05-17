@@ -1,13 +1,14 @@
 import React from 'react';
 import ProductList from '../components/ProductList';
 import CategoryList from '../components/CategoryList';
+import SearchBar from '../components/SearchBar';
 
 const LandingPage = () => {
   return (
     <div>
       <div className='wrapper'>
         <CategoryList />
-        <p>sök ruta här</p>
+        <SearchBar />
        <ProductList  />
     </div>
     </div>
