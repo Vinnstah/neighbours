@@ -27,8 +27,31 @@ body {
   padding: 20px;
 }
 
+h4 {
+  font-size: 18px;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
 p {
   margin: 0;
+}
+
+.Bar {
+  background-color: var(--grey);
+  border: none;
+  height: 1px;
+  width: 100vh;
+  margin-left: -30px;
 }
 
 /* NAV */
@@ -234,3 +257,34 @@ p {
   font-size: 20px;
   margin-left: 6px;
 }
+
+/* SEARCH BAR */
+
+.SearchBar {
+  height: 40px;
+  border: solid var(--primary) 1.8px;
+  border-right: none;
+  width: 100%;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  padding: 10px;
+  font-family: "Poppins", sans-serif;
+  color: var(--dark);
+}
+
+.InputField {
+  display: flex;
+}
+
+.SearchBtn {
+  height: inherit;
+  background-color: var(--primary);
+  color: var(--light);
+  font-weight: 600;
+  border: none;
+  padding: 20px;
+  font-family: "Poppins", sans-serif;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
