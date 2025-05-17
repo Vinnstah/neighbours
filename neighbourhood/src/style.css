@@ -246,6 +246,18 @@ p {
   text-decoration: none;
 }
 
+.CatTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 12px;
+}
+
+.CarArrowRight {
+  font-size: 20px;
+  margin-left: 6px;
+}
+
 /* SEARCH BAR */
 
 .SearchBar {
