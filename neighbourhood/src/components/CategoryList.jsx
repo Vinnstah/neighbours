@@ -51,7 +51,7 @@ const CategoryList = () => {
                 </div>
             </div>
             <Link to="/produkter" className="cat-link">
-            <p className="APItitle">Se alla kategorier här <IoIosArrowRoundForward className='rightArrow'/></p>
+            <p className="CatTitle">Se alla kategorier <IoIosArrowRoundForward className="CarArrowRight"/></p>
             </Link>
             </div>
         </article>
