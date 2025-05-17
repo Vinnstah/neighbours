@@ -100,6 +100,7 @@ p {
 .APItitle {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   padding-right: 20px;
 }
@@ -174,4 +175,50 @@ p {
   font-size: 12px;
   padding-left: 10px;
   margin: 0;
+}
+
+
+/* CATEGORY LIST */
+
+
+.CatArt {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.CatDiv {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.CatCat {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  gap: 6px;
+}
+
+.CatIcon {
+  background-color: var(--tertiary);
+  border: solid var(--light) 1.5px;
+  box-shadow: 0 0 0 1.5px var(--grey);
+  border-radius: 100%;
+  padding: 10px;
+  font-size: 24px;
+  color: var(--dark);
+}
+
+.CatP {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.cat-link {
+  color: var(--dark);
+  text-decoration: none;
 }

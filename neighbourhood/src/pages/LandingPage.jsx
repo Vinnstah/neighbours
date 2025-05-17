@@ -1,11 +1,12 @@
 import React from 'react';
 import ProductList from '../components/ProductList';
+import CategoryList from '../components/CategoryList';
 
 const LandingPage = () => {
   return (
     <div>
       <div className='wrapper'>
-        <p>kategorilista här</p>
+        <CategoryList />
         <p>sök ruta här</p>
        <ProductList  />
     </div>
