@@ -46,6 +46,14 @@ p {
   margin: 0;
 }
 
+.Bar {
+  background-color: var(--grey);
+  border: none;
+  height: 1px;
+  width: 100vh;
+  margin-left: -30px;
+}
+
 /* NAV */
 
 .navbar {

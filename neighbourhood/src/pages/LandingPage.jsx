@@ -8,6 +8,7 @@ const LandingPage = () => {
     <div>
       <div className='wrapper'>
         <CategoryList />
+        <hr  className='Bar'/>
         <SearchBar />
        <ProductList  />
     </div>
