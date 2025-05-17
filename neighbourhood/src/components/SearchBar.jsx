@@ -1,9 +1,8 @@
 import React from 'react';
 
-
 const SearchBar = () => {
   return (
-    <article className='wrapper'>
+    <article>
         <div className='InputField'>
         <input type="text" className='SearchBar' placeholder='Vad letar du efter?'>
         </input>  

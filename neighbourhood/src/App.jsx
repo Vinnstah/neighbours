@@ -12,7 +12,7 @@ import CategoryPageDjur from './pages/CategoryPageDjur';
 import CategoryPageParty from './pages/CategoryPageParty';
 import CategoryPageLivsmedel from './pages/CategoryPageLivsmedel';
 import CategoryPageOvrigt from './pages/CategoryPageOvrigt';
-import ProductPage from './pages/ProductPage';
+import ProductsPage from './pages/ProductsPage';
 
 function App() {
 
@@ -35,7 +35,7 @@ function App() {
             <Route path="/kategori/party" element={<CategoryPageParty />} />
             <Route path="/kategori/livsmedel" element={<CategoryPageLivsmedel />} />
             <Route path="/kategori/ovrigt" element={<CategoryPageOvrigt />} />
-            <Route path="/produkter" element={<ProductPage />} />
+            <Route path="/produkter" element={<ProductsPage />} />
           </Routes>
         </BrowserRouter>
     </div>

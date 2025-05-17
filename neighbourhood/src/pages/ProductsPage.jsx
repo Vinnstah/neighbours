@@ -1,6 +1,6 @@
 import React from 'react';
 
-const ProductPage = () => {
+const ProductsPage = () => {
   return (
     <div>
       <div className='wrapper'>
@@ -10,4 +10,4 @@ const ProductPage = () => {
   );
 };
 
-export default ProductPage;
+export default ProductsPage;

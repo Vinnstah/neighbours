@@ -137,11 +137,11 @@ p {
   gap: 25px;
   margin-left: 0;
   padding: 0;
-  overflow: hidden;
 }
 
 .APIproduct {
   border: solid var(--grey) 1px;
+  background-color: var(--light);
   border-radius: 6px;
   display: flex;
   flex-direction: column;
@@ -261,6 +261,8 @@ p {
 /* SEARCH BAR */
 
 .SearchBar {
+  margin-top: 20px;
+  margin-bottom: 30px;
   height: 40px;
   border: solid var(--primary) 1.8px;
   border-right: none;
@@ -277,6 +279,8 @@ p {
 }
 
 .SearchBtn {
+  margin-top: 20px;
+  margin-bottom: 30px;
   height: inherit;
   background-color: var(--primary);
   color: var(--light);

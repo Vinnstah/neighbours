@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import { IoIosArrowRoundForward } from "react-icons/io";
 import { TiStar } from "react-icons/ti";
 
 function ProductList() {
@@ -13,11 +12,7 @@ function ProductList() {
   }, []);
 
   return (
-    <article className='wrapper'>
-      <div className='APItitle'>
-      <h2>Nya produkter</h2>
-      <p><IoIosArrowRoundForward className='rightArrow'/></p>
-      </div>
+    <article>
       <ul className='APIList'>
         {products.map(product => 
           <li key={product.id} className='APIproduct'>
