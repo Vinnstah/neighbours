@@ -15,20 +15,28 @@ import CategoryPageOvrigt from './pages/Category Pages/CategoryPageOvrigt';
 import SingleProductPage from './pages/SingleProductPage';
 import CategoryPage from './pages/Category Pages/CategoryPage';
 import ProductsPage from './pages/ProductsPage';
+import LoginPage from './pages/LoginPage';
+import RegisterPage from './pages/RegisterPage';
 
 function App() {
 
   return (
     <div>
-      <TopNavbar />
       <BrowserRouter>
+       <TopNavbar />
         <Navbar />
           <Routes>
+            {/* LOG IN LINKS */}
+            <Route path="/logga-in" element={<LoginPage />} />
+            <Route path="/registrera-konto" element={<RegisterPage />} />
+
             {/* NAVBAR LINKS */}
             <Route path="/" element={<LandingPage />} />
             <Route path="/sok" element={<SearchPage />} />
             <Route path="/lana-ut" element={<LendingPage />} />
             <Route path="/min-profil" element={<ProfilePage />} />
+
+            {/* TOP NAVBAR LINKS */}
 
             {/* CATEGORY LINKS */}
             <Route path="/kategori/verktyg" element={<CategoryPageVerktyg />} />
