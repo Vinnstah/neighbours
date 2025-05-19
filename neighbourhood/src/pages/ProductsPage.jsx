@@ -5,7 +5,7 @@ const ProductsPage = () => {
     <div>
       <div className='wrapper'>
         <p>Alla produkter</p>
-    </div>
+        </div>
     </div>
   );
 };

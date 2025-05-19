@@ -27,6 +27,17 @@ body {
   padding: 20px;
 }
 
+.link {
+  text-decoration: none;
+}
+
+h2 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+}
+
 h4 {
   font-size: 18px;
   margin: 0;
@@ -36,6 +47,13 @@ h4 {
 }
 
 h3 {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+h4 {
   font-size: 14px;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
@@ -170,7 +188,7 @@ p {
 
 .rating {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
@@ -292,3 +310,65 @@ p {
   border-bottom-right-radius: 6px;
 }
 
+/* SINGLE PRODUCT PAGE STYLING */
+
+.singleProduct {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.productImg {
+  width: 100%;
+  border-radius: 6px;
+  border: var(--grey) solid 1.5px;
+}
+
+.loanBtn {
+  background-color: var(--primary);
+  border: none;
+  color: var(--light);
+  border-radius: 6px;
+  width: 100%;
+  height: 45px;
+  font-family: 'Poppins';
+  font-size: 12px;
+}
+
+.renterImg {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: var(--light) 1px solid;
+  box-shadow: 0 0 0 1.5px var(--grey);
+}
+
+.rentDiv {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+}
+
+.productDiv p {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+  gap: 6px;
+}
+
+.productLink {
+  color: var(--dark);
+  font-size: 16px;
+  padding: 0;
+}
+
+.backArrow {
+  font-size: 32px;
+  background-color: var(--primary);
+  border-radius: 100%;
+  color: var(--light);
+  padding: 10px;
+}

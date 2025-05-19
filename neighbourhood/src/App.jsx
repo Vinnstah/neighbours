@@ -12,6 +12,7 @@ import CategoryPageDjur from './pages/CategoryPageDjur';
 import CategoryPageParty from './pages/CategoryPageParty';
 import CategoryPageLivsmedel from './pages/CategoryPageLivsmedel';
 import CategoryPageOvrigt from './pages/CategoryPageOvrigt';
+import SingleProductPage from './pages/SingleProductPage';
 import ProductsPage from './pages/ProductsPage';
 
 function App() {
@@ -35,7 +36,10 @@ function App() {
             <Route path="/kategori/party" element={<CategoryPageParty />} />
             <Route path="/kategori/livsmedel" element={<CategoryPageLivsmedel />} />
             <Route path="/kategori/ovrigt" element={<CategoryPageOvrigt />} />
-            <Route path="/produkter" element={<ProductsPage />} />
+            <Route path="/produkter" element={<ProductsPage />} /> 
+
+             {/* PRODUCT LINKS */}
+            <Route path="/produkt/:id" element={<SingleProductPage />} />
           </Routes>
         </BrowserRouter>
     </div>

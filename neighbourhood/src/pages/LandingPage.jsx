@@ -12,17 +12,17 @@ const LandingPage = () => {
         <hr  className='Bar'/>
         <SearchBar />
         <div className='APItitle'>
-           <h4>Hyr igen</h4>
+           <h3>Hyr igen</h3>
           <p><IoIosArrowRoundForward className='rightArrow'/></p>
         </div>
         <ProductList />
         <div className='APItitle'>
-           <h4>Nytt i grannskapet</h4>
+           <h3>Nytt i grannskapet</h3>
           <p><IoIosArrowRoundForward className='rightArrow'/></p>
         </div>
           <ProductList  />
           <div className='APItitle'>
-           <h4>Se allt</h4>
+           <h3>Se allt</h3>
         </div>
         <ProductList />
     </div>
