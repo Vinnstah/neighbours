@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { RiMapPinLine } from "react-icons/ri";
-import { IoIosArrowRoundBack } from "react-icons/io";
+import BackBtn from '../components/BackBtn';
 
 const SingleProductPage = () => {
   const { id } = useParams();
@@ -25,11 +25,7 @@ const SingleProductPage = () => {
     <article className="wrapper">
       <div className='singleProduct'>
         <div className='productDiv'>
-      <Link to="/" className='link'>
-      <p className='productLink'><IoIosArrowRoundBack className='backArrow'/>
-      Tillbaka
-      </p>
-      </Link>
+      <BackBtn />
       </div>
       <img src={product.productImg} alt={product.productDes} className='productImg'/>
       <h2>{product.productName}</h2>

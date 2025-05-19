@@ -1,24 +1,30 @@
 import React, { useEffect, useState } from 'react';
-import { TiStar } from "react-icons/ti";
 import { Link } from "react-router-dom";
+import { TiStar } from "react-icons/ti";
+import BackBtn from '../../components/BackBtn';
 
-function GetProduct() {
+function CategoryPageParty() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    fetch('/products.json')
-      .then(res => res.json())
-      .then(data => setProducts(data))
-      .catch(error => console.error('Fel vid hämtning', error));
-  }, []);
+  fetch('/products.json')
+    .then(res => res.json())
+    .then(data => {
+      const filtered = data.filter(product => product.productCat.toLowerCase() === "party");
+      setProducts(filtered);
+    })
+    .catch(error => console.error('Fel vid hämtning', error));
+}, []);
 
-  return (
-    <article>
+ return (
+    <article className='wrapper'>
       <ul className='ProductList'>
+          <BackBtn />
+        <h2>Allt inom party</h2>
         {products.map(product => (
           <li key={product.id} className='productsList'>
             <Link to={`/produkt/${product.id}`} className='link'>
-              <img src={product.productImg} alt={product.productDes} className='prodImg' />
+              <img src={product.productImg} alt={product.productDes} className='prodImg'/>
               <div className='APItitlePlacing'>
                 <div className='prodTitle'>
                   <h3 className='APIh3'>{product.productName}</h3>
@@ -35,6 +41,6 @@ function GetProduct() {
       </ul>
     </article>
   );
-}
+};
 
-export default GetProduct;
+export default CategoryPageParty;

@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  padding-bottom: 60px; /* så att bottom nav inte går över sista contentet på sidan */
+  padding-bottom: 100px; /* så att bottom nav inte går över sista contentet på sidan */
   background-color: var(--primary);
 }
 
@@ -24,11 +24,12 @@ body {
   background-color: var(--light);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  padding: 20px;
+  padding: 20px 20px 20px 20px;
 }
 
 .link {
   text-decoration: none;
+  color: var(--dark);
 }
 
 h2 {
@@ -36,6 +37,7 @@ h2 {
   margin: 0;
   font-weight: 700;
   font-family: "Poppins", sans-serif;
+  padding: 10px;
 }
 
 h4 {
@@ -138,12 +140,28 @@ p {
 
 /* API-LIST STYLING */
 
-.APItitle {
+.APItitle a {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
+  align-items: start;
   padding-right: 20px;
+  margin: 0;
+}
+
+.APItitle h3 {
+  padding-top: 2px;
+}
+
+.APIh3title {
+  display: flex;
+  flex-direction: row;
+  border: solid rgb(36, 119, 119) 2px;
+  margin: 0;
+}
+
+span {
+  margin: 0;
+  height: 100%;
 }
 
 .rightArrow {
@@ -218,9 +236,15 @@ p {
   margin: 0;
 }
 
+/* CATEGORY PRODUCTS */
+
+.CatIconProd {
+  font-size: 20px;
+  padding-right: 6px;
+}
+
 
 /* CATEGORY LIST */
-
 
 .CatArt {
   display: flex;
@@ -360,6 +384,9 @@ p {
 }
 
 .productLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   color: var(--dark);
   font-size: 16px;
   padding: 0;
@@ -372,3 +399,55 @@ p {
   color: var(--light);
   padding: 10px;
 }
+
+/* ALL PRODUCT LIST STYLING */
+
+.ProductList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.productsList {
+  border: var(--grey) solid 1.5px;
+  border-radius: 6px;
+  padding: 0 0 6px 0;
+}
+
+.prodImg {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  border-bottom: var(--grey) 1.5px solid;
+}
+
+.prodTitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.prodRenterImg {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: var(--light) 1px solid;
+  box-shadow: 0 0 0 1.5px var(--grey);
+}
+
+.prodP {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  padding-left: 10px;
+  margin: 0;
+}
+
+
