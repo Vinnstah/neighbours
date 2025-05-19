@@ -5,9 +5,12 @@
         "productDes":"En fin spade",
         "productCat": "Verktyg",
         "productRenter":"Ronny Larsson",
+        "renterImg": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "productImg": "https://gardentutor.com/wp-content/uploads/2019/10/Square-Head-Garden-Spade.jpg",
         "productRating": "4.5",
-        "productAmountRating": "(12)"
+        "productAmountRating": "(12)",
+        "productDistance": "500m bort",
+        "renterAmount": "124"
 
     },
     {
@@ -16,9 +19,12 @@
         "productDes":"Ett parttält för 30 personer",
         "productCat": "Trädgård",
         "productRenter":"Ronny Larsson",
+        "renterImg": "https://images.unsplash.com/photo-1564564321837-a57b7070ac4f?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "productImg": "https://www.norrortspartyservice.se/wp-content/uploads/2015/09/t%C3%A4lt-9x3.jpg",
         "productRating": "4.5",
-        "productAmountRating": "(12)"
+        "productAmountRating": "(12)",
+        "productDistance": "500m bort",
+        "renterAmount": "124"
     },
     {
         "id": "2",
@@ -26,10 +32,26 @@
         "productDes":"Transportbur 70x50x60",
         "productCat": "Djur",
         "productRenter":"Sven-Gösta Nilsson",
+        "renterImg": "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "productImg": "https://tidningen.djurskyddet.se/wp-content/uploads/2024/06/katt-i-transportbur.jpg",
         "productRating": "4.5",
-        "productAmountRating": "(324)"
+        "productAmountRating": "(324)",
+        "productDistance": "90m bort",
+        "renterAmount": "3"
 
+    },
+    {
+        "id": "4",
+        "productName": "Transportbur",
+        "productDes":"Transportbur 70x50x60",
+        "productCat": "Djur",
+        "productRenter":"Sven-Gösta Nilsson",
+        "renterImg": "https://images.unsplash.com/photo-1615109398623-88346a601842?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "productImg": "https://tidningen.djurskyddet.se/wp-content/uploads/2024/06/katt-i-transportbur.jpg",
+        "productRating": "4.5",
+        "productAmountRating": "(324)",
+        "productDistance": "90m bort",
+        "renterAmount": "3"
     },
     {
         "id": "3",
@@ -37,8 +59,11 @@
         "productDes":"En bra hammare",
         "productCat": "Verktyg",
         "productRenter":"Sanna Nielsen",
+        "renterImg": "https://images.unsplash.com/photo-1604364721460-0cbc5866219d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "productImg": "https://images.staticjw.com/pri/3035/hammare.jpg",
         "productRating": "4.5",
-        "productAmountRating": "(120)"
+        "productAmountRating": "(120)",
+        "productDistance": "100m bort",
+        "renterAmount": "4"
     }
 ]

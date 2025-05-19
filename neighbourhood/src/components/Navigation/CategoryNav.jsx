@@ -8,7 +8,7 @@ import { PiCat } from "react-icons/pi";
 import { HiOutlineDotsHorizontal } from "react-icons/hi";
 import { IoIosArrowRoundForward } from "react-icons/io";
 
-const CategoryList = () => { 
+const CategoryNav = () => { 
     return (
         <article className="wrapper">
             <div className="CatArt">
@@ -50,7 +50,7 @@ const CategoryList = () => {
                     </Link>
                 </div>
             </div>
-            <Link to="/produkter" className="cat-link">
+            <Link to="/kategorier" className="cat-link">
             <p className="CatTitle">Se alla kategorier <IoIosArrowRoundForward className="CarArrowRight"/></p>
             </Link>
             </div>
@@ -58,4 +58,4 @@ const CategoryList = () => {
     )
 };
 
-export default CategoryList;
+export default CategoryNav;

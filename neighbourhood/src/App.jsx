@@ -1,17 +1,19 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from "./components/Nav";
+import Navbar from "./components/Navigation/Nav";
 import LandingPage from './pages/LandingPage';
 import SearchPage from './pages/SearchPage';
 import LendingPage from './pages/LendingPage';
 import ProfilePage from './pages/ProfilePage';
-import TopNavbar from './components/TopNav';
-import CategoryPageVerktyg from './pages/CategoryPageVerktyg';
-import CategoryPageTradgard from './pages/CategoryPageTradgard';
-import CategoryPageDjur from './pages/CategoryPageDjur';
-import CategoryPageParty from './pages/CategoryPageParty';
-import CategoryPageLivsmedel from './pages/CategoryPageLivsmedel';
-import CategoryPageOvrigt from './pages/CategoryPageOvrigt';
+import TopNavbar from './components/Navigation/TopNav';
+import CategoryPageVerktyg from './pages/Category Pages/CategoryPageVerktyg';
+import CategoryPageTradgard from './pages/Category Pages/CategoryPageTradgard';
+import CategoryPageDjur from './pages/Category Pages/CategoryPageDjur';
+import CategoryPageParty from './pages/Category Pages/CategoryPageParty';
+import CategoryPageLivsmedel from './pages/Category Pages/CategoryPageLivsmedel';
+import CategoryPageOvrigt from './pages/Category Pages/CategoryPageOvrigt';
+import SingleProductPage from './pages/SingleProductPage';
+import CategoryPage from './pages/Category Pages/CategoryPage';
 import ProductsPage from './pages/ProductsPage';
 
 function App() {
@@ -35,7 +37,11 @@ function App() {
             <Route path="/kategori/party" element={<CategoryPageParty />} />
             <Route path="/kategori/livsmedel" element={<CategoryPageLivsmedel />} />
             <Route path="/kategori/ovrigt" element={<CategoryPageOvrigt />} />
-            <Route path="/produkter" element={<ProductsPage />} />
+            <Route path="/kategorier" element={<CategoryPage />} /> 
+
+             {/* PRODUCT LINKS */}
+            <Route path="/produkt/:id" element={<SingleProductPage />} />
+            <Route path="/produkter" element={<ProductsPage />} /> 
           </Routes>
         </BrowserRouter>
     </div>

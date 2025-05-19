@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { TiStar } from "react-icons/ti";
+import { Link } from "react-router-dom";
 
 function ProductList() {
   const [products, setProducts] = useState([]);
@@ -8,14 +9,15 @@ function ProductList() {
        fetch('/products.json')
       .then(res => res.json())
       .then(data => setProducts(data))
-      .catch(error => console.error('Fel vid hämtning:', error));
+      .catch(error => console.error('Fel vid hämtning', error));
   }, []);
 
   return (
     <article>
       <ul className='APIList'>
-        {products.map(product => 
+        {products.map(product => (
           <li key={product.id} className='APIproduct'>
+            <Link to={`/produkt/${product.id}`} className='cat-link'>
                 <img src={product.productImg} alt={product.productDes} />
                 <div className='APItitlePlacing'>
                 <div>
@@ -26,8 +28,9 @@ function ProductList() {
             <p className='ratingP'><TiStar className='star'/>{product.productRating} {product.productAmountRating}</p>
             </div>
             </div>
+            </Link>
           </li>
-        )}
+       ))};
       </ul>
     </article>
   );
