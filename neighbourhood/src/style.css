@@ -20,11 +20,28 @@ body {
 }
 
 .wrapper {
-  padding-left: 20px;
   background-color: var(--light);
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   padding: 20px 20px 20px 20px;
+}
+
+.loginWrapper {
+  height: 100vh;
+  background-color: var(--light);
+  padding: 20px 20px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+a {
+  color: var(--dark);
+}
+
+.registerLink {
+  font-size: 12px;
 }
 
 .link {
@@ -72,6 +89,42 @@ p {
   height: 1px;
   width: 100vh;
   margin-left: -30px;
+}
+
+/* LOG IN PAGES AND REGISTER */
+
+.logInBtn {
+  border: none;
+  background-color: var(--primary);
+  color: var(--light);
+  font-family: 'Poppins';
+  font-size: 16px;
+  border-radius: 6px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logInBtn img {
+  height: 30px;
+  margin-right: 6px;
+}
+
+.secondarylogInBtn {
+  border: solid var(--primary) 1.5px;
+  background-color: transparent;
+  color: var(--primary);
+  font-family: 'Poppins';
+  font-weight: 500;
+  font-size: 16px;
+  border-radius: 6px;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* NAV */
