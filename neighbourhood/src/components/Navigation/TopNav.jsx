@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { HiOutlineUserCircle } from "react-icons/hi2";
 import { RiMapPinLine } from "react-icons/ri";
 import { PiChats } from "react-icons/pi";
-import { GoHeart } from "react-icons/go";
 import { PiShoppingCart } from "react-icons/pi";
+import { Link } from "react-router-dom";
 
 const TopNavbar = () => { 
  return (
@@ -16,9 +16,8 @@ const TopNavbar = () => {
     </div>
     </div>
     <div className="NavColumn2">
-       <PiChats />
-       <GoHeart />
-       <PiShoppingCart />
+       <Link to="/meddelanden"><PiChats /></Link>
+       <Link to="/varukorg"><PiShoppingCart /></Link>
     </div>
     </article>
  );

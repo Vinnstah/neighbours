@@ -17,11 +17,15 @@ import CategoryPage from './pages/Category Pages/CategoryPage';
 import ProductsPage from './pages/ProductsPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import CartPage from './pages/CartPage';
+import MessagePage from './pages/MessagePage';
+import { CartProvider } from './context/CartContext';
+import PaymentPage from './pages/PaymentPage';
 
 function App() {
 
   return (
-    <div>
+    <CartProvider>
       <BrowserRouter>
        <TopNavbar />
         <Navbar />
@@ -37,6 +41,8 @@ function App() {
             <Route path="/min-profil" element={<ProfilePage />} />
 
             {/* TOP NAVBAR LINKS */}
+            <Route path="/varukorg" element={<CartPage />} />
+            <Route path="/meddelanden" element={<MessagePage />} />
 
             {/* CATEGORY LINKS */}
             <Route path="/kategori/verktyg" element={<CategoryPageVerktyg />} />
@@ -50,9 +56,11 @@ function App() {
              {/* PRODUCT LINKS */}
             <Route path="/produkt/:id" element={<SingleProductPage />} />
             <Route path="/produkter" element={<ProductsPage />} /> 
+            <Route path="/betalning" element={<PaymentPage />} /> 
+
           </Routes>
         </BrowserRouter>
-    </div>
+        </CartProvider>
   );
 }
 
