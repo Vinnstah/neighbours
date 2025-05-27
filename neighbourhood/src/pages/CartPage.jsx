@@ -43,8 +43,8 @@ const CartPage = () => {
             ))}
           </ul>
           <div>
-             <Link to="/betalning"><button>Låna</button></Link>
-            <Link to="/"><button>Fortsätt handla</button></Link>
+             <Link to="/betalning"><button className="loanBtn">Låna</button></Link>
+            <Link to="/"><button>Leta efter annan produkt</button></Link>
           </div>
         </div>
       )}
