@@ -17,6 +17,10 @@ import SingleProductPage from './pages/SingleProductPage';
 import ProductsPage from './pages/ProductsPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import CartPage from './pages/CartPage';
+import MessagePage from './pages/MessagePage';
+import { CartProvider } from './context/CartContext';
+import PaymentPage from './pages/PaymentPage';
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -24,6 +28,42 @@ const AppRoutes = () => {
   const shouldHideNavbars = hideNavbarPaths.includes(location.pathname);
 
   return (
+    <CartProvider>
+      <BrowserRouter>
+       <TopNavbar />
+        <Navbar />
+          <Routes>
+            {/* LOG IN LINKS */}
+            <Route path="/logga-in" element={<LoginPage />} />
+            <Route path="/registrera-konto" element={<RegisterPage />} />
+
+            {/* NAVBAR LINKS */}
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/sok" element={<SearchPage />} />
+            <Route path="/lana-ut" element={<LendingPage />} />
+            <Route path="/min-profil" element={<ProfilePage />} />
+
+            {/* TOP NAVBAR LINKS */}
+            <Route path="/varukorg" element={<CartPage />} />
+            <Route path="/meddelanden" element={<MessagePage />} />
+
+            {/* CATEGORY LINKS */}
+            <Route path="/kategori/verktyg" element={<CategoryPageVerktyg />} />
+            <Route path="/kategori/tradgard" element={<CategoryPageTradgard />} />
+            <Route path="/kategori/djur" element={<CategoryPageDjur />} />
+            <Route path="/kategori/party" element={<CategoryPageParty />} />
+            <Route path="/kategori/livsmedel" element={<CategoryPageLivsmedel />} />
+            <Route path="/kategori/ovrigt" element={<CategoryPageOvrigt />} />
+            <Route path="/kategorier" element={<CategoryPage />} /> 
+
+             {/* PRODUCT LINKS */}
+            <Route path="/produkt/:id" element={<SingleProductPage />} />
+            <Route path="/produkter" element={<ProductsPage />} /> 
+            <Route path="/betalning" element={<PaymentPage />} /> 
+
+          </Routes>
+        </BrowserRouter>
+        </CartProvider>
     <>
       {!shouldHideNavbars && <TopNavbar />}
       {!shouldHideNavbars && <Navbar />}
