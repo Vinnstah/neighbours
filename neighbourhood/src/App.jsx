@@ -49,14 +49,11 @@ const AppRoutes = () => {
         <Route path="/meddelanden" element={<MessagePage />} />
         <Route path="/betalning" element={<PaymentPage />} />
 
-             {/* PRODUCT LINKS */}
-            <Route path="/produkt/:id" element={<SingleProductPage />} />
-            <Route path="/produkter" element={<ProductsPage />} /> 
-            <Route path="/betalning" element={<PaymentPage />} /> 
-            <Route path="/genomfort-kop" element={<PaidPage />} />
-          </Routes>
-        </BrowserRouter>
-        </CartProvider>
+        {/* PRODUCT LINKS */}
+        <Route path="/produkt/:id" element={<SingleProductPage />} />
+        <Route path="/produkter" element={<ProductsPage />} /> 
+        <Route path="/betalning" element={<PaymentPage />} /> 
+        <Route path="/genomfort-kop" element={<PaidPage />} />
 
          {/* Category links */}
         <Route path="/kategori/verktyg" element={<CategoryPageVerktyg />} />
