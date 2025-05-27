@@ -222,6 +222,10 @@ p {
   font-size: 24px;
 }
 
+.NavColumn2 a {
+  color: var(--light);
+}
+
 /* API-LIST STYLING */
 
 .APItitle a {
