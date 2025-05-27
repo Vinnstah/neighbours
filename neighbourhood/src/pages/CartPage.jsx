@@ -4,11 +4,18 @@ import { IoTrashOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
 
 const CartPage = () => {
-  const { cart, setCart, removeFromCart } = useContext(CartContext);
-  const [insurance, setInsurance] = useState("nej");
-  const [totalPrice, setTotalPrice] = useState(0);
+const {
+  cart,
+  setCart,
+  removeFromCart,
+  insurance,
+  setInsurance,
+  insuranceCost,
+  setInsuranceCost,
+  totalPrice,
+  setTotalPrice
+} = useContext(CartContext);
 
-  const [insuranceCost, setInsuranceCost] = useState(0);
 
 useEffect(() => {
   const baseTotal = cart.reduce((sum, product) => sum + (product.price || 0) * (product.itemCount || 1), 0);

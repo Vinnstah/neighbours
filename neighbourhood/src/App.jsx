@@ -21,6 +21,7 @@ import CartPage from './pages/CartPage';
 import MessagePage from './pages/MessagePage';
 import { CartProvider } from './context/CartContext';
 import PaymentPage from './pages/PaymentPage';
+import PaidPage from './pages/PaidPage';
 
 function App() {
 
@@ -57,7 +58,7 @@ function App() {
             <Route path="/produkt/:id" element={<SingleProductPage />} />
             <Route path="/produkter" element={<ProductsPage />} /> 
             <Route path="/betalning" element={<PaymentPage />} /> 
-
+            <Route path="/genomfort-kop" element={<PaidPage />} />
           </Routes>
         </BrowserRouter>
         </CartProvider>
