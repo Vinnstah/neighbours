@@ -30,7 +30,7 @@ function ProductList() {
             </div>
             </Link>
           </li>
-       ))};
+       ))}
       </ul>
     </article>
   );
