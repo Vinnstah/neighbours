@@ -54,9 +54,6 @@ const AppRoutes = () => {
             <Route path="/produkter" element={<ProductsPage />} /> 
             <Route path="/betalning" element={<PaymentPage />} /> 
             <Route path="/genomfort-kop" element={<PaidPage />} />
-          </Routes>
-        </BrowserRouter>
-        </CartProvider>
 
          {/* Category links */}
         <Route path="/kategori/verktyg" element={<CategoryPageVerktyg />} />

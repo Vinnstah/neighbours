@@ -99,6 +99,10 @@ useEffect(() => {
               Nej
             </label>
           </li>
+          <div>
+            <h3>Lämnas tillbaka senast:</h3>
+            <p>Om <strong>5</strong> dagar</p>
+          </div>
           <div className="cart-payment">
           <p>Totalt:</p>
           <p>{totalPrice} kr</p>
