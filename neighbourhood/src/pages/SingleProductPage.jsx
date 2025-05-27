@@ -53,7 +53,7 @@ const SingleProductPage = () => {
       <img src={product.productImg} alt={product.productDes} className='productImg'/>
       <h2>{product.productName}</h2>
       <p>{product.productDes}</p>
-      <button className='loanBtn' onClick={handleBuyClick}>Låna</button>
+      <button className='primary-btn' onClick={handleBuyClick}>Låna</button>
       <h3>Lånas ut av</h3>
       <div className='rentDiv'>
       <img src={product.renterImg} alt="bild på säljare" className='renterImg'/>

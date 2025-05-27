@@ -70,8 +70,31 @@ p {
   background-color: var(--grey);
   border: none;
   height: 1px;
-  width: 100vh;
+  width: 102vw;
   margin-left: -30px;
+}
+
+.primary-btn {
+  background-color: var(--primary);
+  border: none;
+  color: var(--light);
+  border-radius: 6px;
+  width: 100%;
+  height: 45px;
+  font-family: 'Poppins';
+  font-size: 12px;
+}
+
+.secondary-btn {
+  background-color: transparent;
+  border: solid var(--primary) 1.5px;
+  color: var(--primary);
+  border-radius: 6px;
+  width: 100%;
+  height: 45px;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 600;
 }
 
 /* NAV */
@@ -348,17 +371,6 @@ span {
   border: var(--grey) solid 1.5px;
 }
 
-.loanBtn {
-  background-color: var(--primary);
-  border: none;
-  color: var(--light);
-  border-radius: 6px;
-  width: 100%;
-  height: 45px;
-  font-family: 'Poppins';
-  font-size: 12px;
-}
-
 .renterImg {
   width: 40px;
   height: 40px;
@@ -450,4 +462,116 @@ span {
   margin: 0;
 }
 
+/* CART STYLING */
 
+.cart-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.cart-items {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-renter-img {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  border-radius: 100%;
+  border: var(--light) 1.5px;
+  box-shadow: 0 0 0 1.5px var(--grey);
+}
+
+.cart-img-text-info {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.cart-img-text {
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+  align-items: center;
+}
+
+.cart-product-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.cart-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+  border: solid var(--grey) 1.5px;
+}
+
+.trash-btn  {
+  border: solid var(--warning) 1.5px;
+  border-radius: 100%;
+  color: var(--warning);
+  background-color: transparent;
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+  min-height: 30px;
+  font-size: 14px;
+  padding: 0;
+  text-align: center;
+}
+
+.cart-p {
+  font-size: 14px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  color: var(--dark);
+}
+
+.cart-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.insurance {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.insurance-radio-btn {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+.cart-payment {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+/* EMPTY CART STYLING */
+
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
