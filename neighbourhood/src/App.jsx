@@ -20,7 +20,9 @@ import RegisterPage from './pages/RegisterPage';
 import CartPage from './pages/CartPage';
 import MessagePage from './pages/MessagePage';
 import PaymentPage from './pages/PaymentPage';
+import PaidPage from './pages/PaidPage';
 import { CartProvider } from './context/CartContext';
+
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -46,6 +48,15 @@ const AppRoutes = () => {
         <Route path="/varukorg" element={<CartPage />} />
         <Route path="/meddelanden" element={<MessagePage />} />
         <Route path="/betalning" element={<PaymentPage />} />
+
+             {/* PRODUCT LINKS */}
+            <Route path="/produkt/:id" element={<SingleProductPage />} />
+            <Route path="/produkter" element={<ProductsPage />} /> 
+            <Route path="/betalning" element={<PaymentPage />} /> 
+            <Route path="/genomfort-kop" element={<PaidPage />} />
+          </Routes>
+        </BrowserRouter>
+        </CartProvider>
 
          {/* Category links */}
         <Route path="/kategori/verktyg" element={<CategoryPageVerktyg />} />
