@@ -15,7 +15,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Poppins", sans-serif;
-  padding-bottom: 100px; /* så att bottom nav inte går över sista contentet på sidan */
+  padding-bottom: 90px; /* så att bottom nav inte går över sista contentet på sidan */
   background-color: var(--primary);
 }
 
@@ -24,6 +24,7 @@ body {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   padding: 20px 20px 20px 20px;
+  min-height: 100vh;
 }
 
 .loginWrapper {
@@ -38,6 +39,7 @@ body {
 
 a {
   color: var(--dark);
+  text-decoration: none;
 }
 
 .registerLink {
@@ -272,6 +274,7 @@ span {
   width: 200px;
   gap: 6px;
   margin: 0;
+  padding-bottom: 6px;
 }
 
 .APIproduct img {
@@ -336,6 +339,7 @@ span {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  broder: solid;
 }
 
 .CatDiv {
@@ -534,6 +538,7 @@ span {
   font-size: 12px;
   padding-left: 10px;
   margin: 0;
+  padding-bottom: 6px;
 }
 
 /* CART STYLING */
@@ -822,4 +827,148 @@ span {
   aspect-ratio: initial;
   border-radius: 20px;
   padding: 10px;
+}
+
+
+/* MESSAGES STYLING */
+
+.title-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--dark);
+}
+
+.edit-icon {
+  font-size: 24px;
+  color: var(--dark);
+}
+
+.all-messages {
+  border: solid var(--grey) 1.5px;
+  border-radius: 6px;
+  height: 100%;
+}
+
+.single-message {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.message-bar {
+  background-color: var(--grey);
+  width: 100%;
+  height: 1.5px;
+  border: none;
+}
+
+.message-img-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.message-name {
+  font-weight: 500;
+  font-size: 16px;
+  margin: 0;
+}
+
+.message-p {
+  font-size: 14px;
+  color: var(--dark);
+  font-weight: 300;
+  margin: 0;
+}
+
+/* SINGLE MESSAGE STYLING */
+
+.back-icon {
+  font-size: 20px;
+  color: var(--dark);
+  padding-left: 6px;
+}
+
+.warning-btn {
+  color: var(--warning);
+  font-size: 20px;
+  padding-right: 10px;
+}
+
+.messages {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message-right {
+  background-color: var(--primary);
+  color: var(--light);
+  width: 50%;
+  padding: 6px;
+  border-radius: 6px;
+  margin-left: 45%;
+}
+
+.message-left {
+  display: flex;
+  justify-content: end;
+  width: 50%;
+  color: var(--dark);
+  background-color: var(--grey);
+  padding: 6px;
+  border-radius: 6px;
+  margin-left: 6px;
+}
+
+.right-trinagle {
+  color: var(--primary);
+  display: flex;
+  justify-content: end;
+  margin-top: -15px;
+  padding-right: 5%;
+}
+
+.left-trinagle {
+  color: var(--grey);
+  display: flex;
+  margin-top: -15px;
+  margin-left: 5%;
+  margin-bottom:  120px;
+}
+
+.text-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: transparent;
+  border: solid var(--grey) 1.5px;
+  padding: 6px;
+  color: var(--dark);
+  border-radius: 6px;
+  margin: 6px;
+  font-size: 13px;
+}
+
+.message-write-bar {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.cam-icon {
+  font-size: 20px;
+  color: var(--light);
+  background-color: var(--primary);
+  border-radius: 100%;
+  padding: 6px;
+}
+
+.img-icon {
+  font-size: 20px;
+  color: var(--dark);
 }
