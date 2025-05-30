@@ -25,6 +25,7 @@ import LendingPage from "./pages/LendingPages/LendingPage";
 import DescriptionPage from "./pages/LendingPages/DescriptionPage";
 import PhotoPage from "./pages/LendingPages/PhotoPage";
 import SummaryPage from "./pages/LendingPages/SummaryPage";
+import SingleMessagePage from "./pages/SingleMessagePage";
 
 const AppRoutes = () => {
   const location = useLocation();
@@ -48,6 +49,7 @@ const AppRoutes = () => {
         <Route path="/produkter" element={<ProductsPage />} />
         <Route path="/varukorg" element={<CartPage />} />
         <Route path="/meddelanden" element={<MessagePage />} />
+        <Route path="/meddelande" element={<SingleMessagePage />} />
         <Route path="/betalning" element={<PaymentPage />} />
 
         {/* LENDINGPAGE LINKS */}

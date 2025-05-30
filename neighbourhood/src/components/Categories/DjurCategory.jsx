@@ -16,7 +16,7 @@ function DjurCategory() {
 }, []);
 
  return (
-    <article className='wrapper'>
+    <article>
       <ul className='APIList'>
         {products.map(product => (
           <li key={product.id} className='APIproduct'>
@@ -25,7 +25,7 @@ function DjurCategory() {
               <div className='APItitlePlacing'>
                 <div className='prodTitle'>
                   <h3 className='APIh3'>{product.productName}</h3>
-                  <p className='prodP'>Uthyrd av:{product.productRenter}</p>
+                  <p className='prodP'>Uthyrd av: {product.productRenter}</p>
                 </div>
                 <div className='rating'>
                   <p className='ratingP'><TiStar className='star' />{product.productRating} {product.productAmountRating}</p>

@@ -10,7 +10,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 
 const CategoryNav = () => { 
     return (
-        <article className="wrapper">
+        <article>
             <div className="CatArt">
             <div className="CatDiv">
                 <div className="CatCat">
