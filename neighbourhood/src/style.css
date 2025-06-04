@@ -828,7 +828,6 @@ span {
   padding: 10px;
 }
 
-
 /* MESSAGES STYLING */
 
 .title-div {
@@ -937,7 +936,7 @@ span {
   display: flex;
   margin-top: -15px;
   margin-left: 5%;
-  margin-bottom:  120px;
+  margin-bottom: 120px;
 }
 
 .text-bar {
@@ -970,4 +969,12 @@ span {
 .img-icon {
   font-size: 20px;
   color: var(--dark);
+}
+
+.summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 10rem;
 }
