@@ -978,3 +978,10 @@ span {
   flex-direction: row;
   gap: 10rem;
 }
+
+.faq {
+  display: grid;
+  justify-items: left;
+  align-items: left;
+  gap: 5px;
+}
