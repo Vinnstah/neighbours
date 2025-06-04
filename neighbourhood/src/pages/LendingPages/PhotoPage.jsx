@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import CategoryDropdown from "../../components/CategoryDropdown";
 import ProgressDots from "../../components/ProgressDots";
 import { useNavigate, useLocation } from "react-router-dom";
 
@@ -42,12 +41,12 @@ const PhotoPage = () => {
           </div>
         ) : (
           <button onClick={toggleImage} className="image-button">
-            Valj bild
+            Välj bild
           </button>
         )}
 
         <button onClick={nextPage} className="next-button">
-          Lana ut sak
+          Låna ut sak
         </button>
       </div>
     </div>
